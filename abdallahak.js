@@ -1,7 +1,7 @@
 
 import { html,LitElement} from 'https://cdn.jsdelivr.net/gh/lit/dist@2/all/lit-all.min.js';
 // define the component
-export class HelloWorld extends LitElement {
+export class HelloWorld1 extends LitElement {
   
   static properties = {
     who: {type: String},
@@ -10,7 +10,7 @@ export class HelloWorld extends LitElement {
   // return a promise for contract changes.
   static getMetaConfig() {
     return {
-      controlName: 'Hello World',
+      controlName: 'Hello World one',
       fallbackDisableSubmit: false,
       version: '1.2',
       properties: {
@@ -34,5 +34,5 @@ export class HelloWorld extends LitElement {
 }
 
 // registering the web component
-const elementName = 'hello-world';
-customElements.define(elementName, HelloWorld);
+const elementName = 'hello-world-one';
+customElements.define(elementName, HelloWorld1);
